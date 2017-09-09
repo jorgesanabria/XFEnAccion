@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveys.Droid", "Surveys.Droid\Surveys.Droid.csproj", "{6CE8F2D8-7C68-46E6-803F-FF97EAB283C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveys.Core", "Surveys.Core\Surveys.Core.csproj", "{E5BFA7B2-FD4F-4FF9-9FB9-2864717E0BC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveys.Web", "Surveys.Web\Surveys.Web.csproj", "{3A52F3EA-6FB1-4411-B464-9D0BFAE75F6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveys.Web.Tests", "Surveys.Web.Tests\Surveys.Web.Tests.csproj", "{9166FC1C-807D-4BB7-8844-F722E74411A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveys.Entities", "Surveys.Entities\Surveys.Entities.csproj", "{F5A52E89-525B-46B2-865B-BDBE39C23B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Surveys.Web.DAL.SqlServer", "Surveys.Web.DAL.SqlServer\Surveys.Web.DAL.SqlServer.csproj", "{C2F740DA-0B77-477D-A991-2FD8C3DA0E77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{DF0C253A-923D-46E5-BC95-232187A4419B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2017", "2017", "{081A6872-CD40-4EB9-8A90-4B30428D2DAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08", "08", "{47BD0584-61A6-4666-B9EE-0C0DF025388B}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\jorge\OneDrive\Documentos\SQL\Pruebas\Crear Tablas Team Y Survey.sql = ..\..\Users\jorge\OneDrive\Documentos\SQL\Pruebas\Crear Tablas Team Y Survey.sql
+		..\..\Users\jorge\OneDrive\Documentos\SQL\Pruebas\Crear-Base-PXForms.sql = ..\..\Users\jorge\OneDrive\Documentos\SQL\Pruebas\Crear-Base-PXForms.sql
+		..\..\Users\jorge\OneDrive\Documentos\SQL\Pruebas\Insertar equipos.sql = ..\..\Users\jorge\OneDrive\Documentos\SQL\Pruebas\Insertar equipos.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09", "09", "{9909E116-9CC8-4B75-A067-0E05C1DE8822}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\jorge\Desktop\bk.sql = ..\..\Users\jorge\Desktop\bk.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CE8F2D8-7C68-46E6-803F-FF97EAB283C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE8F2D8-7C68-46E6-803F-FF97EAB283C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE8F2D8-7C68-46E6-803F-FF97EAB283C3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6CE8F2D8-7C68-46E6-803F-FF97EAB283C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE8F2D8-7C68-46E6-803F-FF97EAB283C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE8F2D8-7C68-46E6-803F-FF97EAB283C3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E5BFA7B2-FD4F-4FF9-9FB9-2864717E0BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5BFA7B2-FD4F-4FF9-9FB9-2864717E0BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5BFA7B2-FD4F-4FF9-9FB9-2864717E0BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5BFA7B2-FD4F-4FF9-9FB9-2864717E0BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A52F3EA-6FB1-4411-B464-9D0BFAE75F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A52F3EA-6FB1-4411-B464-9D0BFAE75F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A52F3EA-6FB1-4411-B464-9D0BFAE75F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A52F3EA-6FB1-4411-B464-9D0BFAE75F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9166FC1C-807D-4BB7-8844-F722E74411A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9166FC1C-807D-4BB7-8844-F722E74411A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9166FC1C-807D-4BB7-8844-F722E74411A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9166FC1C-807D-4BB7-8844-F722E74411A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A52E89-525B-46B2-865B-BDBE39C23B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A52E89-525B-46B2-865B-BDBE39C23B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A52E89-525B-46B2-865B-BDBE39C23B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A52E89-525B-46B2-865B-BDBE39C23B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F740DA-0B77-477D-A991-2FD8C3DA0E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F740DA-0B77-477D-A991-2FD8C3DA0E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F740DA-0B77-477D-A991-2FD8C3DA0E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F740DA-0B77-477D-A991-2FD8C3DA0E77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{081A6872-CD40-4EB9-8A90-4B30428D2DAC} = {DF0C253A-923D-46E5-BC95-232187A4419B}
+		{47BD0584-61A6-4666-B9EE-0C0DF025388B} = {081A6872-CD40-4EB9-8A90-4B30428D2DAC}
+		{9909E116-9CC8-4B75-A067-0E05C1DE8822} = {081A6872-CD40-4EB9-8A90-4B30428D2DAC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A215796-0F2D-4A3F-A54B-1D41C333CAE8}
+	EndGlobalSection
+EndGlobal

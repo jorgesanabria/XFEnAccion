@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Surveys.Core.Views.SurveysView"
+             xmlns:core="clr-namespace:Surveys.Core;assembly=Surveys.Core"
+             xmlns:converters="clr-namespace:Surveys.Core.Converters;assembly=Surveys.Core"
+             Title="Encuestas">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="SurveyDataTemplate">
+                <ViewCell>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="{Binding Team.Logo}" WidthRequest="100" HeightRequest="100" HorizontalOptions="Start" Margin="4"/>
+                        <StackLayout Grid.Column="1">
+                            <Label Text="{Binding Name}" FontSize="24"/>
+                            <Label Text="{Binding BirthDate, StringFormat='{}{0:dd/MM/yyyy}'}"/>
+                            <Label Text="{Binding FavoriteTeam}" TextColor="{Binding Team.Color}"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Lat, StringFormat='{}{0:N4}'}"/>
+                                <Label Text="{Binding Lon, StringFormat='{}{0:N4}'}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+            <converters:TeamColorConverter x:Key="ColorConverterCustom"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="1" ItemsSource="{Binding Surveys}" SelectedItem="{Binding SelectedSurvey, Mode=TwoWay}" ItemTemplate="{StaticResource SurveyDataTemplate}" HasUnevenRows="True"></ListView>
+        <Grid IsVisible="{Binding IsEmpty}">
+            <StackLayout VerticalOptions="Center">
+                <Label Text="¡No hay encuestas!" FontSize="Large" HorizontalTextAlignment="Center"/>
+                <Label Text="Pero es buen momento de crear una" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Grid>
+    </Grid>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Nueva" Command="{Binding NewSurveyCommand}"/>
+        <ToolbarItem Text="Borrar" Command="{Binding DeleteSurveyCommand}"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>
